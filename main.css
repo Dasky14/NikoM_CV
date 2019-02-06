@@ -1,0 +1,106 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px; /* Same as the margin-left of main */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #eeeeee;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav img {
+    filter: grayscale(100%);
+    border-radius: 100px; /* half of width for circle */
+    width: 200px; /* sidenav width - 50 */
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1d1d1d;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #747474;
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+.main {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.main div {
+    margin-top: 25px;
+}
+
+.main h1 {
+    font-size: 50px;
+}
+
+.main h2 {
+    font-size: 36px;
+}
+
+#nametitle1 {
+    line-height: 0.6;
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#nametitle2 {
+    color: #8d00b8;
+    line-height: 0.6;
+    font-size: 70px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#namesubtitle {
+    font-size: 34px;
+    color: #aaa;
+}
+
+.infoboxes {
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.somelogo {
+    width: 50px;
+}
+
+meter.skillbar {
+    -webkit-appearance: none;
+	border: none;
+    background: none;
+    border-radius: 0px;
+    box-shadow: none;
+    width: 100%;
+}
+meter.skillbar:-moz-meter-optimum::-moz-meter-bar {
+    background: #8d00b8;
+}
+
+#education li {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
